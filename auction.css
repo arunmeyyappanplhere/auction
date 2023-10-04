@@ -1,0 +1,239 @@
+body{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    font-family: monospace;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#heading{
+    margin: 40px;
+}
+
+marquee{
+    height: 550px;
+    display: flex;
+    background-color: transparent;
+}
+
+.product-preview{
+    background-color: rgb(0, 0, 0);
+    width: 90%;
+    height: 50%;
+    margin-left: 5%;
+    border-radius: 5px;
+}
+
+.product-prev-box{
+    background-color: #B18411;
+    border-radius: 15px;
+    margin: 20px;
+    width: 400px;
+    height: 500px;
+    transition: 0.4s;
+    position: relative;
+}
+
+
+.product-prev-box img{
+    width: 340px;
+    margin: 30px;
+    margin-bottom: 0;
+}
+
+.product-prev-box pre{
+    font-family: monospace;
+    margin: 20px;
+    padding-left: 30px;
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 5px;
+}
+.product-prev-box h4{
+    font-family: monospace;
+    margin: 20px;
+    padding-left: 30px;
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.product-prev-box h3{
+    color: black;
+    font-family: monospace;
+    margin: 20px;
+    margin-top: 0;
+    padding-left: 30px;
+    font-size: 1.5rem;
+    display: inline;
+    margin-right: 10px;
+}
+
+.product-prev-box{
+    display: inline-block;
+    transition: 0.4s;
+}
+
+.product-prev-box:hover{
+    transform: scale(1.05);
+}
+
+#product-on-bid .product-prev-box:hover{
+    transform: none;
+}
+
+
+.toppy{
+    display: flex;
+}
+
+.toppy button{
+    height: 50px;
+    width: 190px;
+    border: 3px solid rgb(0, 153, 255);
+    background-color: transparent;
+    color: rgb(0, 153, 255);
+    border-radius: 4px;
+    transition: 0.4s;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 3%;
+    margin-left: 40%;
+}
+
+.toppy button:hover{
+    color: white;
+    background-color: rgb(0, 153, 255);
+    transform: scale(1.05);
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
+}
+
+#product-on-bid .product-prev-box{
+    margin-right: 85px;
+}
+
+.product-prev-box .product-sold-out-img,
+.product-prev-box .product-img{
+    position: absolute;
+    top: 30;
+    left: 30;
+    transition: 0.3s;
+}
+
+.product-prev-box .name-worth{
+    margin-top: 400px;
+}
+
+#product-on-bid{
+    display: flex;
+}
+
+#product-on-bid .sold-out{
+    height: 40px;
+    width: 120px;
+    border: 3px solid rgb(200, 0, 0);
+    background-color: rgb(200, 0, 0);
+    color: #fff;
+    border-radius: 4px;
+    transition: 0.4s;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: -400px;
+}
+
+#product-on-bid .sold-out:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
+.bid-func{
+    margin-top: 10%;
+}
+
+.bid-func #name-of-bidder{
+    display: inline-block;
+    height: 53px;
+    width: 300px;
+    font-size: 1.5rem;
+    margin-right: 80px;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 20px;
+}
+
+.bid-func button.bid-confirm{
+    height: 53px;
+    width: 190px;
+    border: 3px solid rgb(0, 153, 255);
+    background-color: transparent;
+    color: rgb(0, 153, 255);
+    border-radius: 4px;
+    transition: 0.4s;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 3%;
+}
+
+.bid-func button.bid-confirm:hover{
+color: white;
+    background-color: rgb(0, 153, 255);
+    transform: scale(1.05);
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
+}
+
+.bidder-details{
+    margin-top: 80px;
+}
+
+.bid-func .bid-here{
+    margin-left: 150px;
+}
+
+.bid-func .bid-here .minus, .bid-func .bid-here .plus{
+    height: 70px;
+    width: 70px;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    transition: 0.3s;
+}
+
+.bid-func .bid-here .plus{
+    color: white;
+    background-color: rgb(30, 172, 19);
+    margin-left: -16px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-left: -30px;
+}
+
+.bid-func .bid-here .minus{
+    color: white;
+    background-color: rgb(255, 0, 38);
+    margin-right: -14px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.bid-func .bid-here #bid-amt-live{
+    height: 64px;
+    outline: none;
+    font-size: 1.5rem;
+    font-family: monospace;
+    width: 100px;
+    border: none;
+    margin-left: 50px;
+}
+
+.bid-func .bid-here{
+    height: fit-content;
+    background-color: white;
+    width: fit-content;
+    border-radius: 8px;
+}
+.bid-func .bid-here .minus:hover, .bid-func .bid-here .plus:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}

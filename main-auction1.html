@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction</title>
+    <link rel="stylesheet" href="auction.css">
+    <script defer src="auction.js"></script>
+</head>
+<body>
+    <div class="toppy">
+        <h1 id="heading">BIDDING BEGAN</h1>
+    </div>
+
+    <section id="product-on-bid">
+        <div class="product-prev-box">
+            <img src="images/Frame 2box-sold.png" id="grey-scaled-img" class="product-sold-out-img">
+            <img src="images/Frame 1box-normal.png" id="normal-img" class="product-img" alt="">
+            <div class="name-worth">
+            <h4 id="bid-product-name">Mystery Box 1</h4>
+            <h3>Worth: C 10</h3>
+            <button onclick="soldOut()" class="sold-out">Sold out</button>
+        </div>
+        </div>
+
+        <div class="working">
+            <div class="box-details">
+                <h3>Get it Now!</h3>
+                
+                <hr>
+            </div>
+
+            <div class="bid-func">
+                <div class="bid-here">
+                    <button class="minus" onclick="minus()">-</button>
+                    <input type="number" id="bid-amt-live" value=1>
+                    <button class="plus" onclick="plus()">+</button>
+                </div>
+                <h4 id="bid-bought-by"></h4>
+                <div class="bidder-details">
+                <input type="text" id="name-of-bidder" placeholder="  Name">
+                <button class="bid-confirm" onclick="doneBid1()">Confirm</button>        
+            </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
